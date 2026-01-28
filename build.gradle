@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.fintech.qe'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Playwright for UI + API testing
+    testImplementation 'com.microsoft.playwright:playwright:1.42.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.9.0'
+}
+
+test {
+    useTestNG()
+}
