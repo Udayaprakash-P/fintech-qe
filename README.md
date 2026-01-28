@@ -19,3 +19,8 @@ security-sensitive workflows.
 - A tool showcase or demo project
 
 Quality here is treated as a system for reducing production risk.
+
+This implementation follows the architecture defined in
+`qe-foundation` and the quality principles documented in
+`quality-by-design`.
+
